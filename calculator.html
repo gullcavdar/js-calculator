@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-6">
+          <input
+            type="text"
+            id="operationPart"
+            class="form-control text-end mb-2"
+            value=""
+            onkeypress="return isNumberKey(event)"
+          />
+          <input
+            type="text"
+            id="operation"
+            class="form-control text-end"
+            value="0"
+            onkeypress="return isNumberKey(event)"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2">
+        <div class="col-6">
+          <div class="d-flex justify-content-center mt-2">
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnFac"
+            >!</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnSin"
+            >sin</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnLn"
+            >ln</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >7</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >8</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >9</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 btnOperator"
+            >/</button>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnPI"
+            >π</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnCos"
+            >cos</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnLog"
+            >log</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >4</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >5</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >6</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 btnOperator"
+            >*</button>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnE"
+            >e</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnTan"
+            >tan</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnSqrt"
+            >√</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >1</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >2</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >3</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 btnOperator"
+            >-</button>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnOperator"
+            >%</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnPow2"
+            >x<sup>2</sup></button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >0</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnNumber"
+            >.</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 btnEqual"
+            >=</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 me-2 delete"
+            >CE</button>
+            <button
+              type="button"
+              class="btn btn-outline-warning w-25 btnOperator"
+            >+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
